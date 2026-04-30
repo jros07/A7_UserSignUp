@@ -2,7 +2,81 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="lopezrjo_7_UserSignUp_URINav.ProfilePage"
-             Title="ProfilePage">
-    
-    
+             Title="Profile Page">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="20">
+
+            <!-- Welcome icon -->
+            <Border HeightRequest="120"
+                    WidthRequest="120"
+                    StrokeShape="RoundRectangle 60"
+                    StrokeThickness="0"
+                    BackgroundColor="#EDE7F6"
+                    HorizontalOptions="Center"
+                    Margin="0,30,0,10">
+                <Label Text="✓"
+                       FontSize="56"
+                       FontAttributes="Bold"
+                       TextColor="#5E35B1"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </Border>
+
+            <!-- Welcome / confirmation message -->
+            <Label Text="Sign-up Successful!"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#5E35B1"/>
+
+            <Label Text="Your account has been created successfully."
+                   FontSize="14"
+                   TextColor="Gray"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,15"/>
+
+            <!-- User info card -->
+            <Border Stroke="#DDDDDD"
+                    StrokeShape="RoundRectangle 12"
+                    Padding="20">
+                <VerticalStackLayout Spacing="14">
+
+                    <VerticalStackLayout Spacing="2">
+                        <Label Text="Username"
+                               FontSize="13"
+                               TextColor="#888888"/>
+                        <Label x:Name="LblUsername"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#222222"/>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="2">
+                        <Label Text="Email"
+                               FontSize="13"
+                               TextColor="#888888"/>
+                        <Label x:Name="LblEmail"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#222222"/>
+                    </VerticalStackLayout>
+
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Sign-out button -->
+            <Button x:Name="BtnSignOut"
+                    Text="Sign Out"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    HeightRequest="50"
+                    CornerRadius="25"
+                    BackgroundColor="#5E35B1"
+                    TextColor="White"
+                    Margin="0,20,0,0"
+                    Clicked="BtnSignOut_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
