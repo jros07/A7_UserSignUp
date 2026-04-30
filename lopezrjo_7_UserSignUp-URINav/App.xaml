@@ -1,4 +1,9 @@
 ﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<!-- Juan O. Lopez Rosado
+     IT3048C 001 - 26 Spring
+     Professor: Dr. Saheed Popoola
+     Module 7 Assignment: Creating user Sign-up and Profile pages using URI-Based Navigation  -->
+
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:lopezrjo_7_UserSignUp_URINav"

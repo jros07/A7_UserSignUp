@@ -5,6 +5,8 @@
         public AppShell()
         {
             InitializeComponent();
+            // Register routes for navigation - ProfilePage 
+            Routing.RegisterRoute(nameof(ProfilePage), typeof(ProfilePage));
         }
     }
 }
